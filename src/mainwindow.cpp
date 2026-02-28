@@ -2047,7 +2047,6 @@ void MainWindow::setupActions()
                                         QIcon::fromTheme(QStringLiteral("bookmark-new")), QKeySequence(), clipActionCategory);
     sentToSequence->setWhatsThis(
         xi18nc("@info:whatsthis", "Adds the clip(s) currently selected in the timeline to a new sequence clip that can be opened in another timeline tab."));
-    sentToSequence->setData('G');
     sentToSequence->setEnabled(false);
 
     act = clipActionCategory->addAction(KStandardAction::Copy, this, SLOT(slotCopy()));
